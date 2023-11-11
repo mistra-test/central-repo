@@ -11,4 +11,4 @@ jobs:
         shell: bash
         run: |
           echo "Executing workflow of central repo"
-          sleep 20
+          sleep 60
