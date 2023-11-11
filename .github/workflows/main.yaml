@@ -3,6 +3,9 @@ name: "Workflow of central repo"
 on:
   workflow_dispatch:
 
+concurrency:
+  group: central-repo-run
+
 jobs:
   trigger_workflow:
     runs-on: ubuntu-latest
