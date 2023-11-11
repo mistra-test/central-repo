@@ -1,0 +1,14 @@
+name: "Workflow of central repo"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  trigger_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo message
+        shell: bash
+        run: |
+          echo "Executing workflow of central repo"
+          sleep 20
